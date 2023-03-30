@@ -11,6 +11,7 @@ using namespace std;
 * 给定字符串s,返回有多少转换结果
 */
 
+//s[i....n]去转换，返回方法数。s[0...i]无需过问。
 int process(string s,int i) {
     if (i == s.size()) return 1;//到达字符串边界，找到一种解决方法
     //i没到达边界情况：
